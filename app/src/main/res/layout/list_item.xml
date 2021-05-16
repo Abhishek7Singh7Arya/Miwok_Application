@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/list_item_height"
+
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height">
+    <LinearLayout
+       android:id="@+id/inner_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical"
+
+        android:paddingLeft="16dp"
+
+        android:background="@color/category_numbers">
+
+
+
+        <TextView
+            android:id="@+id/mmiwok_text_View"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+           android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="lutti"
+            android:gravity="bottom"
+
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:gravity="top"
+         android:layout_weight="1"
+            android:layout_height="0dp"
+
+
+            tools:text="lutti" />
+    </LinearLayout>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/outline_play_arrow_white_24" />
+
+
+</RelativeLayout>
+
+</RelativeLayout>
